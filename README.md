@@ -21,4 +21,4 @@ b站有尚硅谷的网课，大概每天看十集吧，总共148集
 [链接 here](https://www.bilibili.com/video/BV1XJ411X7Ud?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click)
 
 * [x] Day01 看完第十六集
-* [ ] Day02
+* [x] Day02 看完了第三十二集，最后的那个CSS听的我有点懵逼啊 得多看点文档温习一下
