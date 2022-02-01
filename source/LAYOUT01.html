@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Normal Flow 文档流</title>
+    <style>
+        .box1{
+            background-color:deepskyblue;
+            width:100px;
+        }
+        .box2{
+            background-color:mediumpurple;
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">This is div 1.</div>
+    <div class="box2">This is div 2.</div>
+    <span>This is span 1.</span>
+    <span>This is span 2.</span>
+</body>
+</html>
+
+<!--
+    网页是一个多层的结构，一层压着一层
+    通过CSS来为每一层设置样式
+    作为用户只能看到最顶上的一层
+    这些层中，最底下的一层称为文档流，是网页的基础
+    我们所创建的元素，默认都是在文档流中进行排列
+        对于我们来说，元素主要有两个状态
+            在文档流中
+                特点：
+                    块元素：在页面中独占一行，自上向下垂直排列
+                            默认宽度是父元素的全部（把父元素撑满）
+                            默认高度是被内容撑开（子元素）
+                    行内元素：不会独占页面一行，只占自身的大小，自左向右水平排列，如果一行不能容纳所有的行内元素，元素会换到第二行继续自左向右排列
+                        行内元素的默认宽度和高度都是被内容撑开的
+
+            不在文档流水中
+
+-->
