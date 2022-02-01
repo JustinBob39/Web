@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+    p::first-line{
+        font-size:20px;
+        color:red;
+        background-color:darkgrey;
+    }
+    p::selection{
+        background-color:greenyellow;
+    }
+    div::before, div::after {
+        content: "added by CSS";
+        color: purple;
+        font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        Hello, how are you?
+    </div>
+    <q>
+        What about now?
+    </q>
+    <p> Happy Lunar New Year! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        A adipisci eos inventore ipsa magnam nam pariatur possimus quisquam repellendus velit!
+        Amet consequatur dignissimos eveniet iste officia quaerat quas quasi, recusandae?</p>
+</body>
+</html>
+
+<!--
+    伪元素，假的元素，虚拟出来的
+        表示页面中一些特殊的并不真实存在的元素（特殊的位置）
+        使用::开头
+        ::first-letter
+        ::fist-line
+        ::selection，选中的元素
+        ::before 表示元素的起始位置
+        ::after 表示元素的结束位置
+            before和after必须结合content使用，通过CSS向HTML添加内容，无法选中
+-->
