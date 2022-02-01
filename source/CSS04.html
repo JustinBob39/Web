@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+        ul>li:not(:nth-of-type(3)){
+            background: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <span>加个span找茬</span>
+        <li>第零个</li>
+        <li>第一个</li>
+        <li>第二个</li>
+        <li>第三个</li>
+        <li>第四个</li>
+        <li>第五个</li>
+    </ul>
+</body>
+</html>
+
+<!--
+    伪类（不存在的类，特殊的类）
+    伪类用来描述一个元素的特殊状态
+        第一个子元素、别点击的元素、鼠标移入的元素……
+    一般情况下使用:开头
+        :first-child 第一个子元素
+        :last-child 最后一个子元素
+        :nth-child(n) 选中第n个子元素
+            如果直接写n，会全部选中，n代表0到正无穷
+            如果直接写2n或者even，会选中全部的偶数元素
+            如果直接写2n+1或者odd，会选中全部的奇数元素
+        以上的这些伪类都是根据所有的子元素进行排序
+
+        :first-of-type
+        :last-of-type
+        :nth-of-type
+            这几个伪类功能和上述的类似，不同点是在同元素类型中进行排序
+    :not 否定伪类，将符合条件的元素从选择器中去除
+-->
