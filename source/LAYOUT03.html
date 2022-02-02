@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子的水平布局</title>
+    <style>
+        .outer{
+            width:800px;
+            height:200px;
+            border:10px red solid;
+        }
+        .inner{
+            width:200px;
+            height:200px;
+            background-color:#bfa;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+        Hello World!
+    </div>
+</body>
+</html>
+
+<!--
+    元素的水平方向的布局
+        元素在其父元素中水平方向的位置由以下几个属性共同决定
+            margin-left
+            border-left
+            padding-left
+            width
+            padding-right
+            border-right
+            margin-right
+        一个元素在其父元素中，水平布局必须满足以下的等式
+        margin-left+border-left+padding-left+width+padding-right+border-right+margin-right
+                =父元素内容区的宽度（必须满足，如果不成立，称为过度约束，等式自动调整）
+        0 + 0 + 0 + 200 + 0 + 0 + 0 = 800
+        0 + 0 + 0 + 200 + 0 + 0 + 600 = 800
+       这七个值中，没有auto的情况，则浏览器自动调整margin-right的值，使等式满足
+        width，margin-left，margin-right可以设置为auto，会自动调整为auto的那个值使等式成立
+            0 + 0 + 0 + auto + 0 + 0 + 0 = 800
+            0 + 0 + 0 + auto + 0 + 0 + 200 = 800
+            auto + 0 + 0 + 200 + 0 + 0 + 200 = 800
+        width，默认就是auto
+
+        如果将width和一个margin设置为auto，则宽度会调整为最大，设置为auto的margin自动为0
+        如果将三个值设置为auto，则外边距都是0，宽度最大
+        如果将宽度设置为固定值，两个外边距为auto，则会将外边距设置为相同的值
+                所以我们经常利用这个特性，使元素在父元素中水平居中
+                width: xxx px;
+                margin: 0 auto;
+-->
