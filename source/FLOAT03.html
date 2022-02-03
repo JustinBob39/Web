@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页的布局</title>
+    <link rel="stylesheet" href="../reset/reset.css">
+    <style>
+        header,main,footer{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        header{
+            height: 100px;
+            background-color: lightgrey;
+        }
+        main{
+            height: 1000px;
+            background-color: #bfa;
+            margin: 10px auto;
+        }
+        main nav, main article, main aside{
+            height: 100%;
+            float: left;
+        }
+        main nav{
+            width: 200px;
+            background-color: antiquewhite;
+        }
+        main article{
+            width: 580px;
+            background-color: lightgrey;
+            margin: 0 10px;
+        }
+        main article .title{
+            width: 100%;
+            height: 20%;
+            background-color: #333;
+        }
+        main article .content1,.content2,.content3{
+            width: 33%;
+            height: 80%;
+            float: left;
+        }
+        main article .content1{
+            background-color: pink;
+        }
+        main article .content2{
+            background-color: rebeccapurple;
+            margin:0 2px 0 3px;
+        }
+        main article .content3{
+            background-color: yellowgreen;
+        }
+        main aside{
+            width: 200px;
+            background-color: lightpink;
+        }
+        footer{
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <nav></nav>
+        <article>
+            <div class="title"></div>
+            <div class="content1"></div>
+            <div class="content2"></div>
+            <div class="content3"></div>
+        </article>
+        <aside></aside>
+    </main>
+    <footer></footer>
+</body>
+</html>
