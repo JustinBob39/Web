@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位的简介</title>
+    <style>
+        div{
+            font-size: 60px;
+        }
+        div[class^="box"]{
+            width: 200px;
+            height: 200px;
+        }
+        .box1{
+            background-color: #bfa;
+        }
+        .box2{
+            background-color: lightpink;
+            /*margin-left: 200px;
+            margin-top: -200px;*/
+            position: relative;
+            top: -200px;
+            left: 200px;
+        }
+        .box3{
+            background-color: mediumpurple;
+            /*margin-top: 200px;*/
+            position: relative;
+            top: -400px;
+            left: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>
+<!--
+    定位position： 是一种更加高级的布局手段
+        通过定位，我们可以将一个元素将元素摆放到页面的任意位置
+        使用position属性来设置定位
+        可选值：
+            1、static 默认值 元素是静止的，没有开启定位
+            2、relative 开启元素的相对定位
+            3、 absolute 开启元素的绝对定位
+            4、 fixed 开启元素的固定定位
+            5、 sticky 开启元素的粘滞定位
+        相对定位：
+            当元素的position属性值设置为relative时，开启了元素的相对定位
+            特点：
+                * 元素开启相对定位以后，如果不设置偏移量，元素不会发生任何变化
+                * 相对定位是参照于元素在文档流中的位置进行定位的
+                * 相对定位会提升元素的层级
+                * 相对定位不会使元素脱离文档流
+                * 相对定位不会改变元素的性质，块还是块，行内还是行内
+                什么是偏移量？offset
+                当元素开启定位以后，可以通过偏移量来设置元素的位置
+                垂直方向 top bottom     使用其中之一即可
+                水平方向 left right
+-->

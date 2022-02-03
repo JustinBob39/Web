@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>W3school上导航栏</title>
+    <link rel="stylesheet" href="../reset/reset.css">
+    <style>
+        .wrapper{
+            width: 1239px;
+            height: 2104px;
+            margin: 0 auto;
+        }
+        .nav-top{
+            margin: 100px auto 0 auto;
+            width: 1210px;
+            height: 48px;
+            background-color: rgb(232, 231, 227);
+            position: sticky;
+            top: 10px;
+        }
+        .nav-top li{
+            float: left;
+            line-height: 48px;
+            text-align: center;
+        }
+        .nav-top .h{
+            width: 166px;
+        }
+        .nav-top .b{
+            width: 191px;
+        }
+        .nav-top .s{
+            width: 175px;
+        }
+        .nav-top .p{
+            width: 198px;
+        }
+        .nav-top .x{
+            width: 113px;
+        }
+        .nav-top .w{
+            width: 197px;
+        }
+        .nav-top .r{
+            width: 170px;
+        }
+        .nav-top li a{
+            -webkit-font-smoothing: antialiased;
+            text-decoration: none;
+            color: rgb(119, 119, 119);
+            font-size: 18px;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .nav-top li a:hover{
+            background-color: rgb(63, 63, 63);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <nav class="nav-top">
+        <ul>
+            <li class="h">
+                <a title="HTML系列教程" href="https://www.w3school.com.cn/h.asp">HTML / CSS</a>
+            </li>
+            <li class="b">
+                <a title="浏览器脚本教程" href="https://www.w3school.com.cn/b.asp">Browser Side</a>
+            </li>
+            <li class="s">
+                <a title="服务器脚本教程" href="https://www.w3school.com.cn/s.asp">Server Side</a>
+            </li>
+            <li class="p">
+                <a title="编程教程" href="https://www.w3school.com.cn/p.asp">Programming</a>
+            </li>
+            <li class="x">
+                <a title="XML系列教程" href="https://www.w3school.com.cn/x.asp">XML</a>
+            </li>
+            <li class="w">
+                <a title="建站手册" href="https://www.w3school.com.cn/w.asp">Web Building</a>
+            </li>
+            <li class="r">
+                <a title="参考手册" href="https://www.w3school.com.cn/r.asp">Reference</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>
+
+<!--
+    粘滞定位
+        当元素position属性设置为sticky时，则开启了元素的粘滞定位
+        粘滞定位和相对定位的特点基本一致，不同的是粘滞定位可以在元素到达某一位置时将其固定
+-->
