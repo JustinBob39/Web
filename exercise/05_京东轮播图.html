@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东轮播图练习</title>
+    <link rel="stylesheet" href="../reset/reset.css">
+    <style>
+        .img-wrapper{
+            left: 0;
+            right: 0;
+            margin-top: 260px;
+            margin-left: 375px;
+            width: 590px;
+            height: 470px;
+            position: relative;
+            border: 1px black solid;
+        }
+        .img-wrapper img{
+            width: 100%;
+            height: 100%;
+        }
+        .button-list{
+            position: absolute;
+            left: 30px;
+            bottom: 20px;
+            width: 113px;
+            height: 15px;
+        }
+        .button-list li{
+            float: left;
+            height: 100%;
+            padding: 0 4px;
+        }
+        .button-list li div[class^="button"]{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin: 3px 0;
+            background-color: rgba(200, 200, 200, 0.3);
+        }
+        .button-list li div:hover{
+            background-color: white;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+<div class="img-wrapper">
+    <img src="../exercise/q1.jpg" alt="">
+    <ul class="button-list">
+        <li class="q1">
+            <div class="button1"></div>
+        </li>
+        <li class="q2">
+            <div class="button2"></div>
+        </li>
+        <li class="q3">
+            <div class="button3"></div>
+        </li>
+        <li class="q4">
+            <div class="button4"></div>
+        </li>
+        <li class="q5">
+            <div class="button5"></div>
+        </li>
+        <li class="q6">
+            <div class="button6"></div>
+        </li>
+        <li class="q7">
+            <div class="button7"></div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
