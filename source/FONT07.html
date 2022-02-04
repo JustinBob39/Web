@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本的其他样式</title>
+    <style>
+        .box1{
+            font-size: 40px;
+            text-decoration: underline red;
+        }
+        .box2{
+            width: 400px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    今天天气真不错！
+</div>
+<div class="box2">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Ad aliquid deserunt dolore pariatur praesentium sapiente similique.
+    Aliquid consectetur delectus deserunt dignissimos doloremque, eius hic iste maxime nemo odio perspiciatis quia!
+</div>
+</body>
+</html>
+
+<!--
+    text-decoration 设置文本的修饰
+        可选值：
+            none 默认值 什么都没有
+            underline 下划线
+            line-through 删除线
+            overline 上划线
+    white-space设置网页如何处理空白
+        可选值：
+            normal 正常
+            nowrap 不换行
+            pre 保留空白
+-->

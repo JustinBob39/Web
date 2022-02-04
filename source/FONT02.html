@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图标字体</title>
+    <link rel="stylesheet" href="../font_awesome/css/all.css">
+    <style>
+        li{
+            list-style: none;
+        }
+        li::before{
+            /*    注意要加\    */
+            content: '\f1b0';
+            font-family: "Font Awesome 5 Free";
+            margin-right: 10px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <i class="fas fa-bell"></i>
+    <i class="fas fa-home fa-fw"></i>
+    <i class="fas fa-frog" style="font-size: 40px; color: darkgreen"></i>
+    <ul>
+        <li>锄禾日当午，<span class="fas">&#xf0f3;</span></li>
+        <li>汗滴禾下土。</li>
+        <li>谁知盘中餐，</li>
+        <li>粒粒皆辛苦。</li>
+    </ul>
+</body>
+</html>
+
+<!--
+    图标字体（IconFont）
+        在网页中经常需要使用一些图标
+            可以通过图片来引入图标，但是图片大小会比较大，并且非常的不灵活
+        所以在使用图标时，可以将图标设置为字体，然后通过font-face的形式对字体进行引入
+        这样我们就可以通过使用字体的形式来使用图标
+    font-awesome使用步骤：
+        将css和webfonts文件夹添加到项目中
+        将all.css引入到网页中
+        使用图标字体
+            直接通过类名来使用图标文件
+            通过伪元素来设置图标字体
+                1、找到要设置图标的元素通过before或者after选中
+                2、在content中设置字体的编码
+                3、设置字体的样式：
+                    font-family
+                    fab    font-family: "Font Awesome 5 Brands";
+                    fas    font-family: "Font Awesome 5 Free";
+            直接通过实体使用 &#x代码;
+-->

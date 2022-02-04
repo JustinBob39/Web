@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本的样式</title>
+    <style>
+        .box1{
+            width: 500px;
+            border: 1px black solid;
+            text-align: justify;
+        }
+        .box2{
+            margin-top: 100px;
+            font-size: 40px;
+            border: 1px black solid;
+        }
+        .box2 span{
+            font-size: 20px;
+            vertical-align: 6px;
+            border: 1px red solid;
+        }
+        p{
+            border: 1px purple solid;
+        }
+        p img{
+            width: 320px;
+            vertical-align: top;
+            /* 只要不是沿着基线对齐，就可以消除图片和边框间的缝隙 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+        Delectus facilis perspiciatis quas quo temporibus?<br>
+        Debitis eos eveniet ex minus, molestias repellat voluptates?<br>
+        Ex ipsa labore nisi quisquam reprehenderit ullam vitae.
+    </div>
+    <div class="box2">
+        Hello World!x
+        <span>今天天气真不错！</span>
+    </div>
+    <p>
+        <img src="../img/transformer2.jpg" alt="">
+    </p>
+</body>
+</html>
+
+<!--
+    text-align 文本的水平对齐
+        可选值：
+            left 左侧对齐
+            right 右侧对齐
+            center 居中对齐
+            justify 两端对齐
+    vertical-align 设置元素的垂直对齐方式
+        可选值：
+            baseline 默认值 基线对齐
+            top 顶部对齐
+            bottom 底部对齐
+            middle 居中对齐
+-->

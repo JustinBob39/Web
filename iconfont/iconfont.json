@@ -1,0 +1,30 @@
+{
+  "id": "3168917",
+  "name": "first",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9626831",
+      "name": "WiFi",
+      "font_class": "WiFi",
+      "unicode": "e865",
+      "unicode_decimal": 59493
+    },
+    {
+      "icon_id": "9626837",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e866",
+      "unicode_decimal": 59494
+    },
+    {
+      "icon_id": "9626986",
+      "name": "指南针",
+      "font_class": "zhinanzhen",
+      "unicode": "e88c",
+      "unicode_decimal": 59532
+    }
+  ]
+}
