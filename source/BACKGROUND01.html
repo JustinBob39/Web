@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            overflow: auto;
+            background-color: lightgrey;
+            background-image: url("../img/transformer2.jpg");
+            background-repeat: no-repeat;
+            /*background-position: center center;*/
+            border: 10px yellowgreen double;
+            background-clip: border-box;
+            background-origin: padding-box;
+            background-size: contain;
+        }
+        .box2{
+            width: 200px;
+            height: 1000px;
+            background-color: mediumpurple;
+            background-image: url("../img/transformer1.jpeg");
+            background-size: 200px;
+            /*background-attachment: fixed;*/
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="box2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aut culpa doloribus eius facilis natus, omnis perferendis quam vitae.
+        Ad laboriosam magnam molestiae pariatur, rerum soluta.
+        Autem commodi molestias quasi sunt.
+    </div>
+</div>
+</body>
+</html>
+
+<!--
+    background-color 设置背景颜色
+    background-image 设置背景图片
+        可以同时设置背景颜色和背景图片，这样背景颜色将会成为图片的背景色
+        如果背景图片尺寸小于元素，则背景图片会自动在元素中平铺将元素铺满
+        如果背景图片尺寸大于元素，则会有一部分背景无法完全显示
+        如果背景图片尺寸和元素一样大，则会正常显示
+    background-repeat 设置背景的重复方式
+        可选值：
+            repeat 默认值，背景沿着x轴 y轴 双方向重复
+            repeat-x 沿着x轴方向重复
+            repeat-y 沿着y轴方向重复
+            no-repeat 背景图片不重复
+    background-position 设置背景图片的位置
+        设置方式：
+            通过 top left right center bottom 几个表示方位的词来设置背景图片的位置
+                使用方位词时必须同时指定两个值，如果只写一个，第二个值默认就是center
+            通过偏移量来指定背景图片的位置：
+                水平方向的偏移量 垂直方向的偏移量
+    background-clip
+        可选值：
+            border-box 默认值 背景会出现在边框的下边
+            padding-box 背景不会出现在边框，只出现在内容区和内边距
+            content-box 背景只会出现内容区
+    background-origin 背景图片的偏移量计算的原点
+        padding-box 默认值 background-position从内边距处开始计算
+        content-box 背景图片的偏移量从内容区处开始计算
+        border-box 背景图片的偏移量从边框处开始计算
+    background-size 设置背景图片的尺寸
+        第一个值表示宽度，第二个值表示高度
+        如果只写一个，则第二个值默认是auto
+        cover 图片的比例不变，将元素铺满
+        contain 完整显示图片，图片的比例不变
+    background-scroll 背景图片是否随着元素移动
+        可选值：
+            scroll 默认值，背景图片会随着图片移动
+            fixed 背景图片会固定在页面中，不会随元素移动
+    可以通过background来设置所有背景相关的属性
+        但是background-size必须写在background-position的后边，使用/分开
+        background-origin 必须在background-clip前面
+-->
