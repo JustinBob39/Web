@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>按钮练习修改版</title>
+    <style>
+        a{
+            display: block;
+            width: 93px;
+            height: 29px;
+            background-image: url("./btn.png");
+            margin: 50px auto;
+        }
+        a:hover{
+            background-position: -93px 0;
+        }
+        a:active{
+            background-position: -186px 0;
+        }
+    </style>
+</head>
+<body>
+<a href="javascript:"></a>
+</body>
+</html>
+
+<!--
+    解决图片的闪烁的问题：
+        将多个小图片统一保存到大图片中，这样图片可以同时加载到网页中，有效地解决图片闪烁问题
+        通过调整background-position显示相应的图片
+        这个技术在网页中应用十分广泛，被称为CSS-Sprite，这种图称为雪碧图
+    雪碧图的使用步骤：
+        1、先确定要是使用的图标
+        2、测量图标的大小
+        3、根据测量的结果创建一个元素
+        4、将雪碧图设置为元素的背景图片
+        5、设置一个偏移量以显示正确的图片
+-->

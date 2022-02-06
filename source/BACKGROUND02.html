@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>渐变</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            /*background-color: #bfa;*/
+            background-image: linear-gradient(45deg, red, orangered, deeppink, pink);
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>
+
+<!--
+    通过渐变可以设置一些复杂的背景颜色，可以从一个颜色向其他颜色进行过渡的效果
+        渐变是图片，需要通过background-image来设置
+        渐变可以指定多个颜色，默认情况下，平均分配
+            也可以手动指定渐变的分布情况
+    线性渐变： 颜色沿着一条直线进行变化
+        linear-gradient(red, pink)红色在开头，粉色在结尾，中间是过渡区域
+        线性渐变的开头，我们可以指定一个渐变的方向
+            to right，to left，to bottom，to top
+            deg 指定度数
+            turn 表示圈
+        repeating-linear-gradient()，可以平铺的线性渐变
+-->
