@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>径向渐变</title>
+    <style>
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-image: repeating-radial-gradient(100px 100px at 300px 0, red, pink);
+        }
+        .box1:hover{
+            background-image: repeating-radial-gradient(50px 50px at 300px 0, red, pink);
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>
+
+<!--
+    radial-gradient() 径向渐变，放射性效果
+        默认情况下，径向渐变的形状根据元素的形状来计算的
+        正方形 --》 圆形
+        长方形 --》 椭圆
+        我们也可以手动指定径向渐变的大小
+        circle 表示正圆
+        ellipse 表示椭圆
+        也可以指定渐变的位置
+        语法：
+            radial-gradient(大小 at 位置, 颜色 位置, 颜色 位置, 颜色 位置)
+            大小： circle ellipse closest-side closest-corner farthest-side farthest-corner
+            位置： top right left center bottom
+-->

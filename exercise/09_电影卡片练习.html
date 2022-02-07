@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影卡片练习</title>
+    <link rel="stylesheet" href="../reset/reset.css">
+    <link rel="stylesheet" href="../font_awesome/css/all.css">
+    <style>
+        body{
+            background-color: grey;
+        }
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .wrapper{
+            width: 240px;
+            /*border: 1px transparent solid;*/
+            border-radius: 6px;
+            margin: 100px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,.3);
+        }
+        .header{
+            width: 240px;
+            height: 158px;
+        }
+        .header img{
+            vertical-align: top;
+        }
+        .content{
+            margin: 10px;
+            color: darkgrey;
+            font: 16px/1 "Microsoft YaHei","Heti SC",Serif,monospace;
+            -webkit-font-smoothing: antialiased;
+        }
+        .content h2{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .content h3{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .content h3 i{
+            font-size: 16px;
+            display: inline-block;
+            padding-right: 6px;
+        }
+        .content p{
+            line-height: 20px;
+        }
+        .spacer{
+            width: 100%;
+            height: 2px;
+            background-color: lightgrey;
+        }
+        .footer{
+            margin: 10px 10px 0 10px;
+            padding-bottom: 10px;
+        }
+        .footer .left{
+            float: left;
+        }
+        .footer i{
+            font-size: 14px;
+            color: grey;
+        }
+        .footer .left i:nth-child(1),
+        .footer .left i:nth-child(2){
+            color: #b9cb41;
+        }
+        .footer .right{
+            float: right;
+            margin-right: 12px;
+        }
+        .footer .right a i:hover{
+            color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <img src="./film.png" alt="">
+    </div>
+    <div class="content">
+        <h2>Animation films</h2>
+        <h3><i class="fas fa-map-marker-alt"></i>Animations</h3>
+        <p>
+            Lorem lpsum is simply dummy text of the printing & typesetting industry
+        </p>
+    </div>
+    <div class="spacer"></div>
+    <div class="footer clearfix">
+        <div class="left">
+            <i class="fas">&#xf005;</i>
+            <i class="fas">&#xf005;</i>
+            <i class="fas">&#xf005;</i>
+            <i class="fas">&#xf005;</i>
+        </div>
+        <div class="right">
+            <a href="https://facebook.com"><i class="fab">&#xf09a;</i></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
