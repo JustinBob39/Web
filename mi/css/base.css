@@ -1,0 +1,19 @@
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 14px;
+    color: #333;
+    min-width: 1226px;
+}
+a{
+    text-decoration: none;
+}
+.w{
+    width: 1226px;
+    margin: 0 auto;
+}
