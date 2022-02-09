@@ -28,6 +28,7 @@
 }
 .shop-cart{
     margin-left: 25px;
+    position: relative;
 }
 .shop-cart a{
     width: 120px;
@@ -40,4 +41,118 @@
 .shop-cart:hover a{
     background-color: white;
     color: #ff6700;
+}
+.app{
+    position: relative;
+}
+.app a:hover .qrcode{
+    display: block;
+    height: 148px;
+    overflow: visible;
+}
+.app .qrcode{
+    width: 124px;
+    /*height: 148px;*/
+    height: 0;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    margin-top: 5px;
+    position: absolute;
+    left: -36px;
+    /*display: none;*/
+    transition: height .4s;
+    z-index: 99;
+}
+.app .qrcode:hover{
+
+}
+.app .qrcode img{
+    width: 90px;
+    margin: 12px 17px 12px 17px;
+}
+
+.app .qrcode::before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 10px solid;
+    border-top: none;
+    border-color: white transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    margin: 0 auto;
+}
+.shop-cart-content{
+    width: 320px;
+    /*height: 100px;*/
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    border-radius: 4px;
+    position: absolute;
+    left: -200px;
+    transition: height .4s;
+    z-index: 99;
+}
+.shop-cart-content p{
+    position: absolute;
+    height: 24px;
+    line-height: 24px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.shop-cart a:hover + .shop-cart-content{
+    display: block;
+    height: 100px;
+}
+/* app:hover::before */
+.header{
+    height: 100px;
+}
+.header .logo{
+    float: left;
+    margin-top: 23px;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    overflow: hidden;
+    text-indent: -999px;
+}
+.header .logo a{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    transition: left .4s;
+}
+.header .logo a img{
+    width: 100%;
+}
+.header .logo .apple{
+    left: -55px;
+    background-image: url("../img/logo-apple.png");
+    background-size: contain;
+}
+.header .logo .mi{
+    left: 0;
+    background-image: url("../img/logo-mi.png");
+    background-size: contain;
+}
+.header .logo:hover .mi{
+    left: 55px;
+}
+.header .logo:hover .apple{
+    left: 0;
 }
