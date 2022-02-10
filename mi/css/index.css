@@ -1,3 +1,7 @@
+body{
+    height: 1000px;
+    background-color: rgb(245, 245, 245);
+}
 .top-bar-wrapper{
     width: 100%;
     height: 40px;
@@ -119,6 +123,9 @@
     height: 100px;
 }
 /* app:hover::before */
+.header-wrapper{
+    position: relative;
+}
 .header{
     height: 100px;
 }
@@ -155,4 +162,352 @@
 }
 .header .logo:hover .apple{
     left: 0;
+}
+.header .nav-wrapper,
+.header .nav-wrapper .nav>li{
+    float: left;
+}
+.header .nav-wrapper{
+    height: 100px;
+    line-height: 100px;
+    margin-left: 7px;
+}
+.header .nav{
+    padding-left: 58px;
+}
+.nav-wrapper .nav>li>a{
+    color: black;
+    font-size: 16px;
+    margin-right: 20px;
+    display: block;
+}
+.nav-wrapper li a:hover{
+    color: #ff6700;
+}
+.all-goods{
+    visibility: hidden;
+}
+.goods-info{
+    /*height: 228px;*/
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transition: height .4s;
+    z-index: 99;
+}
+/*.nav li:not(:first-of-type):not(:nth-of-type(9)):not(:nth-of-type(10)):hover ~ .goods-info,*/
+/*.nav .goods-info:hover{*/
+/*    height: 228px;*/
+/*    box-shadow: 0 4px 1px rgba(0,0,0,.1);*/
+/*    border-top: 1px solid rgb(224,224,224);*/
+/*}*/
+.nav .show-goods:hover ~ .goods-info,
+.nav .goods-info:hover {
+    height: 228px;
+    box-shadow: 0 4px 1px rgba(0, 0, 0, .1);
+    border-top: 1px solid rgb(224, 224, 224);
+}
+.search-wrapper{
+    width: 296px;
+    height: 50px;
+    float: right;
+    margin-top: 25px;
+}
+.search .search-inp,
+.search .search-btn{
+    float: left;
+}
+.search-wrapper{
+    width: 296px;
+    height: 50px;
+}
+.search .search-inp{
+    height: 50px;
+    width: 244px;
+    box-sizing: border-box;
+    border: 1px solid rgb(224,224,224);
+    padding: 0 10px;
+    font-size: 14px;
+    outline: none;
+}
+.search .search-btn{
+    height: 50px;
+    width: 52px;
+    font-size: 18px;
+    padding: 0;
+    background-color: white;
+    border: 1px solid rgb(224,224,224);
+    border-left: none;
+    color: #616161;
+}
+.search .search-inp:focus,
+.search .search-inp:focus + .search-btn{
+    border-color: #ff6700;
+}
+.search .search-btn:hover{
+    background-color: #ff6700;
+    color: white;
+}
+.left-nav{
+    width: 234px;
+    height: 460px;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    z-index: 9;
+    left: 107px;
+}
+.left-nav li{
+    height: 42px;
+    line-height: 42px;
+}
+.left-nav li::before{
+    content: '\f105';
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+    font-size: 18px;
+    position: absolute;
+    left: 190px;
+    color: white;
+}
+.left-nav li:first-child{
+    margin-top: 20px;
+}
+.left-nav li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 42px;
+    padding-left: 30px;
+}
+.left-nav li a:hover{
+    background-color: #ff6700;
+    color: white;
+}
+.banner{
+    position: relative;
+    height: 460px;
+}
+.banner .img-list img{
+    width: 1226px;
+    vertical-align: top;
+}
+.banner .img-list li{
+    position: absolute;
+}
+.pointer{
+    position: absolute;
+    bottom: 24px;
+    right: 36px;
+}
+.pointer a{
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255,255,255,.4);
+    border: 3px rgba(0,0,0,.4) solid;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.pointer a:hover,
+.pinter a.active{
+    background-color: rgba(0,0,0,.4);
+    border-color: rgba(255,255,255,.4);
+}
+.prev-next a{
+    display: block;
+    width: 41px;
+    height: 69px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.prev-next .prev{
+    left: 234px;
+    background-image:url("../img/icon-slides.png");
+    background-position: -84px 0;
+}
+.prev-next .prev:hover{
+    background-position: 0 0;
+}
+.prev-next .next{
+    right: 0;
+    background-image:url("../img/icon-slides.png");
+    background-position: -125px 0;
+}
+.prev-next .next:hover{
+    background-position: -42px 0;
+}
+.to-top-wrapper{
+    width: 26px;
+    height: 210px;
+    background-color: white;
+    position: fixed;
+    bottom: 60px;
+    right: 50%;
+    margin-right: -639px;
+    border-radius: 4px;
+}
+.to-top li{
+    width: 27px;
+    height: 42px;
+    box-sizing: border-box;
+    position: relative;
+}
+.to-top li>a{
+    line-height: 42px;
+    text-align: center;
+    display: block;
+    color: rgb(153, 153, 153);
+    font-size: 18px;
+}
+.to-top li:not(:last-child){
+    border-bottom: 1px rgb(245, 245, 245) solid;
+}
+.to-top li>a:hover{
+    color: #ff6700;
+}
+.to-top li>a::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border:6px solid;
+    border-right: none;
+    border-color: transparent white;
+    position: absolute;
+    left: -8px;
+    top: 12px;
+    display: none;
+}
+.to-top  li>div{
+    position: absolute;
+    left: -114px;
+    top: 3px;
+    background-color: white;
+    display: none;
+}
+.to-top  li:not(:first-of-type) div a{
+    text-decoration: none;
+    color: rgb(153, 153, 153);
+    display: block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 8px;
+}
+.to-top  .phone-wrapper{
+    width: 130px;
+    height: 172px;
+    padding: 14px;
+    left: -165px;
+    background-color: white;
+}
+.phone{
+    margin: 10px;
+}
+.phone img{
+    width: 110px;
+}
+.phone p{
+    margin-top: 12px;
+    color: rgb(153, 153, 153);
+    text-align: center;
+}
+.to-top li:hover a::before,
+.to-top li:hover  div{
+    display: block;
+}
+/*
+    fixed布局的等式
+        left + margin-left + padding-left + width + padding-right + margin-right + right = 视口的宽度
+        auto + 0 + 26 + 0 + 60 = 视口宽度
+        auto + 0 + 26 + 0 + 视口宽度的50% = 视口宽度
+*/
+.left-nav-content{
+    width: 0;
+    height: 460px;
+    overflow: hidden;
+    position: absolute;
+    background-color: white;
+    z-index: 99;
+    left: 234px;
+    top: 0;
+    border-radius: 0 6px 6px 0;
+    transition: width .4s;
+}
+.left-nav li:hover ~ .left-nav-content{
+    width: 450px;
+}
+div.ad{
+    background-color: white;
+    margin-top: 12px;
+    height: 170px;
+}
+.ad .shortcut,
+.ad .ad-img,
+.ad li{
+    float: left;
+}
+.ad .shortcut{
+    width: 228px;
+    height: 168px;
+    background-color: #5f5750;
+    margin-right: 14px;
+    padding-top: 2px;
+    padding-left: 6px;
+}
+.ad .shortcut a{
+    display: block;
+    height: 84px;
+    width: 76px;
+    color: #cfccca;
+    text-align: center;
+}
+.ad .shortcut a:hover{
+    color: white;
+}
+.ad .shortcut i{
+    display: block;
+    font-size: 18px;
+    padding: 14px 0 14px 0;
+}
+.ad .shortcut li{
+    position: relative;
+}
+.ad .shortcut li::before{
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 1px;
+    background-color: #665e57;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.ad .shortcut li::after{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 1px;
+    background-color: #665e57;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+}
+.ad .ad-img li{
+    width: 316px;
+    margin-right: 15px;
+}
+.ad .ad-img li:last-child{
+    margin: 0;
+}
+.ad .ad-img img{
+    width: 100%;
+    vertical-align: top;
 }
